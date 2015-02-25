@@ -109,11 +109,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zk-jw-GGg">
-                                <rect key="frame" x="195" y="507" width="53" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zk-jw-GGg">
+                                <rect key="frame" x="188" y="550" width="53" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="53" id="A1l-cJ-Fbp"/>
-                                    <constraint firstAttribute="height" constant="30" id="SPa-wI-4ra"/>
+                                    <constraint firstAttribute="width" constant="53" id="rbc-kf-k5D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
                                 <state key="normal" title="Info">
@@ -126,32 +125,19 @@
                                     <segue destination="rVa-z2-zDx" kind="modal" id="Jea-IH-I1n"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_0344" translatesAutoresizingMaskIntoConstraints="NO" id="sFq-nU-IWb">
-                                <rect key="frame" x="195" y="110" width="225" height="398"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0344" translatesAutoresizingMaskIntoConstraints="NO" id="sFq-nU-IWb">
+                                <rect key="frame" x="188" y="110" width="225" height="398"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="225" id="Ucd-Po-OQz"/>
+                                    <constraint firstAttribute="width" constant="225" id="zYw-yZ-EeZ"/>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="80" y="201" width="240" height="398"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Anhad's First App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs4-Ii-RoM">
-                                <rect key="frame" x="192" y="72" width="230" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvt-Rj-46j">
+                                <rect key="frame" x="348" y="550" width="65" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9vy-PL-zg3"/>
-                                    <constraint firstAttribute="width" constant="230" id="c5X-ru-mPv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="98" y="162" width="204" height="30.5"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvt-Rj-46j">
-                                <rect key="frame" x="357" y="507" width="65" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="0Kv-Ks-32q"/>
+                                    <constraint firstAttribute="width" constant="65" id="vhe-As-nyg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
                                 <state key="normal" title="Goals"/>
@@ -162,20 +148,34 @@
                                     <segue destination="Kou-zU-lmg" kind="modal" id="1ti-fx-U9h"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anhad's First App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs4-Ii-RoM">
+                                <rect key="frame" x="185" y="28" width="230" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="brb-I8-eVb"/>
+                                    <constraint firstAttribute="width" constant="230" id="rgr-3n-PDy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="98" y="162" width="204" height="30.5"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zs4-Ii-RoM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="0td-aB-p38"/>
-                            <constraint firstAttribute="centerY" secondItem="sFq-nU-IWb" secondAttribute="centerY" constant="-9" id="8FE-kd-cbi"/>
-                            <constraint firstItem="gvt-Rj-46j" firstAttribute="baseline" secondItem="0zk-jw-GGg" secondAttribute="firstBaseline" id="8ry-MA-y7j"/>
-                            <constraint firstItem="0zk-jw-GGg" firstAttribute="leading" secondItem="sFq-nU-IWb" secondAttribute="leading" id="97j-nH-cTs"/>
-                            <constraint firstAttribute="centerX" secondItem="Zs4-Ii-RoM" secondAttribute="centerX" constant="-7" id="EkE-M8-0IS"/>
-                            <constraint firstItem="gvt-Rj-46j" firstAttribute="top" secondItem="0zk-jw-GGg" secondAttribute="top" id="N9U-z5-6q2"/>
-                            <constraint firstItem="gvt-Rj-46j" firstAttribute="trailing" secondItem="Zs4-Ii-RoM" secondAttribute="trailing" id="SVS-vz-R9S"/>
-                            <constraint firstItem="gvt-Rj-46j" firstAttribute="firstBaseline" secondItem="0zk-jw-GGg" secondAttribute="baseline" id="eC5-A6-ypo"/>
-                            <constraint firstAttribute="centerX" secondItem="sFq-nU-IWb" secondAttribute="centerX" constant="-7.5" id="ejK-kA-SmB"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0zk-jw-GGg" secondAttribute="bottom" constant="63" id="gB2-X0-1ld"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Zs4-Ii-RoM" secondAttribute="bottom" constant="498" id="tC5-98-k64"/>
+                            <constraint firstItem="gvt-Rj-46j" firstAttribute="trailing" secondItem="Zs4-Ii-RoM" secondAttribute="trailing" constant="-2" id="AMu-cE-xFz"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0zk-jw-GGg" secondAttribute="bottom" constant="20" id="BCt-pY-Klk"/>
+                            <constraint firstItem="Zs4-Ii-RoM" firstAttribute="leading" secondItem="0zk-jw-GGg" secondAttribute="leading" constant="-3" id="ITZ-oY-PPN"/>
+                            <constraint firstItem="Zs4-Ii-RoM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ij5-X8-VXf"/>
+                            <constraint firstItem="Zs4-Ii-RoM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Kul-2m-EHA"/>
+                            <constraint firstItem="Zs4-Ii-RoM" firstAttribute="centerX" secondItem="sFq-nU-IWb" secondAttribute="centerX" constant="-0.5" id="RMo-ng-9Bs"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="sFq-nU-IWb" secondAttribute="bottom" constant="92" id="auu-42-W3x"/>
+                            <constraint firstItem="sFq-nU-IWb" firstAttribute="top" secondItem="Zs4-Ii-RoM" secondAttribute="bottom" constant="52" id="bY3-45-Fxu"/>
+                            <constraint firstItem="gvt-Rj-46j" firstAttribute="baseline" secondItem="0zk-jw-GGg" secondAttribute="firstBaseline" id="fmo-j8-xzC"/>
+                            <constraint firstItem="gvt-Rj-46j" firstAttribute="firstBaseline" secondItem="0zk-jw-GGg" secondAttribute="baseline" id="hhR-sK-Cu4"/>
+                            <constraint firstItem="0zk-jw-GGg" firstAttribute="top" secondItem="sFq-nU-IWb" secondAttribute="bottom" constant="42" id="lh0-Ll-S6i"/>
+                            <constraint firstItem="gvt-Rj-46j" firstAttribute="top" secondItem="0zk-jw-GGg" secondAttribute="top" id="zLU-66-BIj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -212,7 +212,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999964" translatesAutoresizingMaskIntoConstraints="NO" id="r1x-6T-F9k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.49999999999999961" translatesAutoresizingMaskIntoConstraints="NO" id="r1x-6T-F9k">
                                 <rect key="frame" x="164" y="208" width="273" height="183"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="273" id="eaJ-B7-vDw"/>
@@ -273,7 +273,7 @@ http://anhadarora.com/</string>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-LQ-abs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-LQ-abs">
                                 <rect key="frame" x="140" y="174" width="321" height="213"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="213" id="7VO-oX-5ug"/>
@@ -341,8 +341,8 @@ even after I graduate. </string>
         <image name="IMG_0344" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="446-3H-HVi"/>
-        <segue reference="dfP-59-pBJ"/>
-        <segue reference="nHD-0e-dUJ"/>
+        <segue reference="Jea-IH-I1n"/>
+        <segue reference="WGt-qm-DKQ"/>
+        <segue reference="1ti-fx-U9h"/>
     </inferredMetricsTieBreakers>
 </document>
