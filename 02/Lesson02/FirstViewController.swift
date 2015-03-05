@@ -20,15 +20,20 @@ class FirstViewController: UIViewController
     */
     
     @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var age: UITextField!
+
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var nameField: UITextField!
     
-    var nameEntered: String = name.text
+    @IBOutlet weak var ageField: UITextField!
+    
+    var nameEntered: String = nameField.text
+    var ageEntered: Int = ageField.text
     
     @IBAction func buttonClicked(sender: AnyObject)
     {
         //todo1()
-        todo2()
+        //todo2(nameField, ageField)
+        todo3(ageField)
     }
     
     func todo1()
@@ -36,9 +41,38 @@ class FirstViewController: UIViewController
         label1.text = "hello world"
     }
     
-    func todo2()
+    func todo2(name: String, age: Int)
     {
         label1.text = "Hello \(name), you are \(age) years old!"
     }
     
+    func todo3 (age: Int)
+    {
+        var linesToPrint: String
+        if age >= 21
+        {
+            linesToPrint = "You can drink \n"
+        }
+        if age >= 18
+        {
+            linesToPrint = "You can vote \n"
+        }
+        if age >= 16
+        {
+            linesToPrint = "You can drive"
+        }
+        
+        label2.text = linesToPrint
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
