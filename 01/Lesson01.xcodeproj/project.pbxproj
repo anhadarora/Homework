@@ -13,6 +13,7 @@
 		5D06C68419D8CFFE0082F2DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D06C68319D8CFFE0082F2DE /* Images.xcassets */; };
 		5D06C69319D8CFFE0082F2DE /* Lesson01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06C69219D8CFFE0082F2DE /* Lesson01Tests.swift */; };
 		8D26FEA31A9D3C4300759D23 /* DSC_0002.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D26FEA21A9D3C4300759D23 /* DSC_0002.png */; };
+		8D71547F1A9D6B8100ACB6A4 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71547E1A9D6B8100ACB6A4 /* FirstScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		5D06C69119D8CFFE0082F2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D06C69219D8CFFE0082F2DE /* Lesson01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson01Tests.swift; sourceTree = "<group>"; };
 		8D26FEA21A9D3C4300759D23 /* DSC_0002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DSC_0002.png; sourceTree = "<group>"; };
+		8D71547E1A9D6B8100ACB6A4 /* FirstScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				5D06C67C19D8CFFE0082F2DE /* AppDelegate.swift */,
 				5D06C67E19D8CFFE0082F2DE /* ViewController.swift */,
 				5D06C68019D8CFFE0082F2DE /* Main.storyboard */,
+				8D71547E1A9D6B8100ACB6A4 /* FirstScreen.swift */,
 				5D06C68319D8CFFE0082F2DE /* Images.xcassets */,
 				8D26FEA21A9D3C4300759D23 /* DSC_0002.png */,
 				5D06C67A19D8CFFE0082F2DE /* Supporting Files */,
@@ -214,6 +217,7 @@
 			files = (
 				5D06C67F19D8CFFE0082F2DE /* ViewController.swift in Sources */,
 				5D06C67D19D8CFFE0082F2DE /* AppDelegate.swift in Sources */,
+				8D71547F1A9D6B8100ACB6A4 /* FirstScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

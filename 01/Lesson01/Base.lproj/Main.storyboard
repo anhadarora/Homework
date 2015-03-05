@@ -9,7 +9,7 @@
         <!--First Screen-->
         <scene sceneID="fld-cR-wRH">
             <objects>
-                <viewController title="First Screen" id="F6v-4X-Mpg" sceneMemberID="viewController">
+                <viewController title="First Screen" id="F6v-4X-Mpg" customClass="FirstScreen" customModule="Lesson01" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YK3-Dn-MkV"/>
                         <viewControllerLayoutGuide type="bottom" id="nhb-Cu-1WC"/>
@@ -341,8 +341,8 @@ even after I graduate. </string>
         <image name="IMG_0344" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jea-IH-I1n"/>
-        <segue reference="WGt-qm-DKQ"/>
+        <segue reference="vES-k8-LlR"/>
         <segue reference="1ti-fx-U9h"/>
+        <segue reference="Jea-IH-I1n"/>
     </inferredMetricsTieBreakers>
 </document>
