@@ -9,11 +9,11 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
     @IBOutlet weak var numbersToAdd: UITextField!
     
     @IBOutlet weak var addResult: UILabel!
-
+    
     var numberEntered: Int = numbersToAdd.text.toInt()
     
     var cumulativeSum: Int = 0
