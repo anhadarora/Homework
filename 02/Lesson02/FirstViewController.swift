@@ -27,7 +27,7 @@ class FirstViewController: UIViewController
     @IBOutlet weak var ageField: UITextField!
     
     var nameEntered: String = nameField.text
-    var ageEntered: Int = ageField.text
+    var ageEntered: Int = ageField.text.toInt()
     
     @IBAction func buttonClicked(sender: AnyObject)
     {
