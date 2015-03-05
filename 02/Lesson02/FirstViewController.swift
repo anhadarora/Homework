@@ -32,8 +32,9 @@ class FirstViewController: UIViewController
     @IBAction func buttonClicked(sender: AnyObject)
     {
         //todo1()
-        //todo2(nameField, ageField)
-        todo3(ageField)
+        //todo2(nameEntered, ageEntered)
+        //todo3(ageEntered)
+        todo4(ageEntered)
     }
     
     func todo1()
@@ -48,18 +49,34 @@ class FirstViewController: UIViewController
     
     func todo3 (age: Int)
     {
-        var linesToPrint: String
+          var linesToPrint: String = ""
         if age >= 21
         {
-            linesToPrint = "You can drink \n"
+            linesToPrint += "You can drink \n"
         }
         if age >= 18
         {
-            linesToPrint = "You can vote \n"
+            linesToPrint += "You can vote \n"
         }
         if age >= 16
         {
-            linesToPrint = "You can drive"
+            linesToPrint += "You can drive"
+        }
+        
+        label2.text = linesToPrint
+    }
+
+    func todo4 (age: Int)
+    {
+        var linesToPrint: String = ""
+        if age >= 16 && age <= 18 {
+            linesToPrint = "you can drive"
+        } else if age >= 18 && age <= 21 {
+            linesToPrint = "You can drive and vote"
+        } else if age >= 21 {
+            linesToPrint = "you can drive, vote and drink (but not at the same time!"
+        } else {
+            linesToPrint = "Go home kiddo"
         }
         
         label2.text = linesToPrint
