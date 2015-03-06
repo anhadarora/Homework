@@ -12,7 +12,7 @@ class ThirdViewController: UIViewController {
     
     @IBOutlet weak var inputNumber: UITextField!
     @IBOutlet weak var evenOddLabel: UILabel!
-    var numberEntered: Int = inputNumber.text.toInt()
+    var numberEntered: Int = inputNumber.text.toInt()!
     
     @IBAction func calculateButton(sender: AnyObject) {
         

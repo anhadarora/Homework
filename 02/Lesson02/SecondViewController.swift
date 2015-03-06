@@ -14,15 +14,21 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var addResult: UILabel!
     
-    var numberEntered: Int = numbersToAdd.text.toInt()
-    
-    var cumulativeSum: Int = 0
+    //    var numberEntered: Int = numbersToAdd.text.toInt()
+    //    var cumulativeSum: Int = 0
     
     @IBAction func addPressed(sender: AnyObject) {
-        cumulativeSum += numberEntered
+        //        cumulativeSum += numberEntered
+        //        addResult.text = "\(cumulativeSum)"
         
-        addResult.text = "\(cumulativeSum)"
-        
+        if numbersToAdd.text != nil && numbersToAdd.text != ""{
+            
+            let inputvalue = numbersToAdd.text!.toInt()!
+            let currentvalue = addResult.text!.toInt()!
+            let sum = inputvalue + currentvalue
+            addResult.text = String(sum)
+            numbersToAdd.text = ""
+        }
     }
     
     
