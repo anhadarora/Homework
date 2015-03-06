@@ -20,21 +20,19 @@ class FirstViewController: UIViewController
     */
     
     @IBOutlet weak var label1: UILabel!
-
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var nameField: UITextField!
-    
     @IBOutlet weak var ageField: UITextField!
     
-    var nameEntered : String = nameField.text!
-    var ageEntered: Int = ageField.text.toInt()!
+    //var nameEntered : String = nameField.text
+    //var ageEntered: Int = ageField.text.toInt()!
     
     @IBAction func buttonClicked(sender: AnyObject)
     {
         //todo1()
-        //todo2(nameEntered, ageEntered)
-        //todo3(ageEntered)
-        todo4(ageEntered)
+        todo2(nameField.text, age: ageField.text.toInt()!)
+        //todo3(ageField.text.toInt()!)
+        //todo4(ageField.text.toInt()!)
     }
     
     func todo1()

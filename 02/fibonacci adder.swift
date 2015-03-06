@@ -8,11 +8,10 @@
 
 import Foundation
 
-func fibonacciNumberAtIndex(fib: Int) -> Int {
+func fibonacciNumberAtIndex(indexOfFibonacciNumber: Int) -> Int {
     
-    if fib < 2 {
-        return fib
-    } else {
-        return fibonacciNumberAtIndex(fib-2) + fibonacciNumberAtIndex(fib-1)
-    }
+    if indexOfFibonacciNumber == 0 { return 1 }
+    if indexOfFibonacciNumber == 1 { return 1 }
+    
+    return fibonacciNumberAtIndex(indexOfFibonacciNumber-2) + fibonacciNumberAtIndex(indexOfFibonacciNumber-1)
 }
