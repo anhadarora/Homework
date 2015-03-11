@@ -86,6 +86,7 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                     </view>
                     <navigationItem key="navigationItem" id="hzY-Hy-RMA"/>
                     <connections>
+                        <outlet property="displayTableViewButtonOutlet" destination="AG3-bY-Vru" id="Vdv-c2-KqD"/>
                         <segue destination="tH5-nV-9zA" kind="show" identifier="show" id="O1F-Kb-DN0"/>
                     </connections>
                 </viewController>

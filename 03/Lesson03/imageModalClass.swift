@@ -9,7 +9,6 @@
 import UIKit
 
 class imageModalClass: UIViewController {
-    
     @IBAction func dismissButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }

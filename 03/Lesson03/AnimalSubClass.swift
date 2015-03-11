@@ -11,7 +11,8 @@ import UIKit
 class AnimalSubClass: Animal {
 
     override func prettyAnimalName() -> String {
-        var customString = "This isn't self.name"
+        var customString = "This isn't self.name" 
+        //couldn't think of any other custom string
         return "Animal name: " + customString
     }
 }
