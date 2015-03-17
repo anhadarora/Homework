@@ -17,13 +17,13 @@ class ViewController: UIViewController {
         
     @IBAction func swipeLeft(sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let destination = storyboard.instantiateViewControllerWithIdentifier("imageModal") as UIViewController
+        let destination = storyboard.instantiateViewControllerWithIdentifier("imageModal") as UIViewController //as is used to typecast
         presentViewController(destination, animated: true, completion: nil)
     }
 
     @IBOutlet weak var displayTableViewButtonOutlet: UIButton!
     @IBAction func displayTableView(sender: AnyObject) {
-        self.performSegueWithIdentifier("show", sender: displayTableViewButtonOutlet)
+        self.performSegueWithIdentifier("show", sender: displayTableViewButtonOutlet)//sender could just be self
         
     }
 }
