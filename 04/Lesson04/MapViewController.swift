@@ -11,8 +11,7 @@ import UIKit
 class MapViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
 
 
-    var map = ["john" : "vocals" , "ringo" : "drums", "paul" : "guitar", "george" : "bass"]
-    //var map = Dictionary<String, String>()
+    var map = Dictionary<String, String>()
     //var map:NSMutableDictionary = [:]
     
     @IBOutlet weak var textField1: UITextField!
@@ -26,6 +25,18 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return map.count
     }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("myMapCell") as UITableViewCell
+        
+        let person = map.keys.array[indexPath.row]
+        
+        cell.textLabel!.text = person
+        cell.detailTextLabel!.text = map[person]
+        
+        return cell
+    }
+
 
     func textFieldShouldReturn(textField2: UITextField) -> Bool {
         textField1.resignFirstResponder()
@@ -33,24 +44,11 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func addData () {
-        
-        
         map.keys.array.append(textField1!.text)
-        
+        map.values.array.append(textField2.text)
         tableView.reloadData()
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("myMapCell") as UITableViewCell
-        
-            let person = map.keys.array[indexPath.row]
-        
-            cell.textLabel?.text = person
-            cell.detailTextLabel?.text = map[person]
-        
-        //cell.textLabel!.text = rows[rows.count - 1 - indexPath.row]
-        return cell
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
