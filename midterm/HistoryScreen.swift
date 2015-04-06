@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Anhad Arora. All rights reserved.
 //
 
+//left for future implementation of a history screen
+
 import UIKit
 
 class HistoryScreen: UIViewController {
