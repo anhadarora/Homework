@@ -43,8 +43,6 @@ class ViewController: UIViewController {
         storeString = ("\(firstOperand)")
         ioLabel.text = storeString
         operatorSign = ""
-        secondOperand = 0.0
-        
     }
     
     //function that inputs operator keys and simultneously computes the answer as the key is pressed
@@ -64,7 +62,7 @@ class ViewController: UIViewController {
             }
         }
         if firstOperand == 0.0 && operatorSign == "" && secondOperand == 0.0 {
-            ioLabel.text = "that was dumb 👏"
+            ioLabel.text = "that was dumb 👏🏻"
         } else {
             ioLabel.text = "\(firstOperand)"
         }
@@ -91,11 +89,16 @@ class ViewController: UIViewController {
     //function that computes the final answer as a result of successive input numbers and operators
     @IBAction func equalsButtonTapped(sender: AnyObject) {
         secondOperand = (storeString as NSString).doubleValue
-        var finalAnswer = calculateAnswer(firstOperand, second: secondOperand, opSymbol: operatorSign)
-        if secondOperand == 0 && operatorSign == "÷" {
+        
+        if ioLabel.text == "0" && operatorSign != "÷" {
+            ioLabel.text = "0.0"
+        } else if secondOperand == 0 && operatorSign == "÷" {
             allClear(secondOperand)
-            ioLabel.text = "that was dumb 👏"
+            ioLabel.text = "that was dumb 👏🏻"
+        } else if operatorSign == "" {
+            ioLabel.text = storeString
         } else {
+            var finalAnswer = calculateAnswer(firstOperand, second: secondOperand, opSymbol: operatorSign)
             ioLabel.text = "\(finalAnswer)"
         }
     }
