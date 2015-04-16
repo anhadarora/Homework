@@ -25,11 +25,11 @@ class FirstViewController: UIViewController {
         //        but it wouldn't compile because 'userDefaults' was of the type void
         //        what does that mean?
         
-        NSUserDefaults.standardUserDefaults().setObject("My Default String", forKey: "test_string")
+//        NSUserDefaults.standardUserDefaults().setObject("My Default String", forKey: "test_string")
         
         var testString = NSUserDefaults.standardUserDefaults().stringForKey("test_string")!
         
-        NSUserDefaults.standardUserDefaults().setDouble(0.0, forKey: "test_number")
+//        NSUserDefaults.standardUserDefaults().setDouble(0.0, forKey: "test_number")
         
         var testNumber = NSUserDefaults.standardUserDefaults().stringForKey("test_number")!
         

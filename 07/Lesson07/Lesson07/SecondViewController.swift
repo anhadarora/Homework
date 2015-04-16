@@ -15,10 +15,11 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let name = settings.stringForKey("settings_name") as String!
-        let slider = settings.stringForKey("settings_slider")
+        let slider = settings.stringForKey("settings_slider") as String!
         
-        textView.text = ("This is the String: \(name)" + "\n" + "This is the Slider Value: \(slider)")
+        textView.text = "This is the String: \(name)\nThis is the Slider Value: \(slider)"
 
     }
 }
