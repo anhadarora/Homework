@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("oV8t4RX0Csjlyg4XlbFKYIWWs5FdYTdg9nLEDlEJ",
+            clientKey: "pKxoFzJMssXXKHOMeUf42zgpArdTBBg4hBZCcyTZ")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        
+        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         let containerViewController = ContainerViewController()
@@ -27,6 +40,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+
+    //--------------------------------------
+    // MARK: Facebook SDK Integration
+    //--------------------------------------
+    
+    ///////////////////////////////////////////////////////////
+    // Uncomment this method if you are using Facebook
+    ///////////////////////////////////////////////////////////
+    // func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+    //     return FBAppCall.handleOpenURL(url, sourceApplication:sourceApplication, session:PFFacebookUtils.session())
+    // }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

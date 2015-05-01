@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @objc
 protocol CenterViewControllerDelegate {
@@ -89,7 +90,7 @@ class CenterViewController: UIViewController {
     
     func findNextAlarm () -> (Int, nextMinute: Int, nextSecond: Int) {
         
-        var nextHour = 18
+        var nextHour = 22
         var nextMinute = 0
         var nextSecond = 0
         
@@ -102,6 +103,12 @@ class CenterViewController: UIViewController {
         super.viewDidLoad()
         //        nextAlarmCountdownLabel.text = "\(displayHour):\(displayMinute):\(displaySecond)"
         countDownToNextAlarm ()
+        
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            println("Object has been saved.")
+        }
     }
     
     override func didReceiveMemoryWarning() {
