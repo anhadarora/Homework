@@ -12,6 +12,14 @@ import Parse
 class SetAlarmViewController: UIViewController {
     
     var students = [PFObject]()
+    var days = ["Monday": false,
+                "Tuesday": false,
+                "Wednesday": false,
+                "Thursday": false,
+                "Friday": false,
+                "Saturday": false,
+                "Sunday": false]
+
     @IBOutlet weak var timePicker: UIDatePicker!
     
     @IBAction func cancelAlarm(sender: AnyObject) {
@@ -19,6 +27,20 @@ class SetAlarmViewController: UIViewController {
         println("cancel")
     }
     
+    @IBOutlet weak var daysTableView: UITableView!
+    func tableView(daysTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return days.keys.array.count
+    }
+    
+    func tableView(daysTableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = daysTableView.dequeueReusableCellWithIdentifier("dayCell") as! DaysTableViewCell
+        
+        let day = days.keys.array[indexPath.row]
+        println(day)
+        cell.textLabel!.text = day
+        
+        return cell
+    }
     //AM is true and PM is false
     func getHourAndMinute() -> (Int, Int, Bool) {
         var amPM = false
@@ -47,6 +69,7 @@ class SetAlarmViewController: UIViewController {
     @IBAction func saveAlarm(sender: AnyObject) {
         
         var student = PFObject(className:"alarmData")
+//        CenterViewController().hours[0] = (getHourAndMinute().0)
         student["hour"] = getHourAndMinute().0
         student["minute"] = getHourAndMinute().1
         student["AM_PM"] = getHourAndMinute().2

@@ -32,6 +32,7 @@
 		8D9715581AF2FFD000CC5EBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9715571AF2FFD000CC5EBD /* SystemConfiguration.framework */; };
 		8D97155A1AF2FFE100CC5EBD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9715591AF2FFE100CC5EBD /* libz.dylib */; };
 		8D97155C1AF2FFED00CC5EBD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D97155B1AF2FFED00CC5EBD /* libsqlite3.dylib */; };
+		8DD717F21AFBE240000D2B56 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD717F11AFBE240000D2B56 /* DaysTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		8D9715571AF2FFD000CC5EBD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D9715591AF2FFE100CC5EBD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8D97155B1AF2FFED00CC5EBD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8DD717F11AFBE240000D2B56 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				8D066A661AED0E7200446DDF /* AppDelegate.swift */,
 				8D066A6B1AED0E7200446DDF /* ViewController.swift */,
 				8D066A6D1AED0E7200446DDF /* Main.storyboard */,
+				8DD717F11AFBE240000D2B56 /* DaysTableViewCell.swift */,
 				8D066A891AED36F400446DDF /* CenterViewController.swift */,
 				8D066A8B1AED380200446DDF /* SidePanelViewController.swift */,
 				8D9715391AF2829B00CC5EBD /* SetAlarmViewController.swift */,
@@ -297,6 +300,7 @@
 				8D066A6A1AED0E7200446DDF /* frameworkApp.xcdatamodeld in Sources */,
 				8D97153A1AF2829B00CC5EBD /* SetAlarmViewController.swift in Sources */,
 				8D066A8E1AED392000446DDF /* ContainerViewController.swift in Sources */,
+				8DD717F21AFBE240000D2B56 /* DaysTableViewCell.swift in Sources */,
 				8D066A671AED0E7200446DDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

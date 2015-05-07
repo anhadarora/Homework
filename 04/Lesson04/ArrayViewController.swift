@@ -25,7 +25,7 @@ class ArrayViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("mycell") as UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("mycell") as! UITableViewCell
         cell.textLabel!.text = rows[indexPath.row]
         return cell
     }

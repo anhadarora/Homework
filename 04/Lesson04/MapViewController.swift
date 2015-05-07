@@ -10,7 +10,7 @@ import UIKit
 
 class MapViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
 
-
+//var dict : [String : String] = [:]
     var map = [String:String]()
     //Dictionary<String, String>()
     //var map:NSMutableDictionary = [:]
@@ -28,7 +28,7 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("myMapCell") as UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("myMapCell") as! UITableViewCell
         
         let person = map.keys.array[indexPath.row]
         cell.textLabel?.text = person
