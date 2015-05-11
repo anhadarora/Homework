@@ -33,6 +33,9 @@
                             <constraint firstItem="Wm9-bH-cCI" firstAttribute="centerX" secondItem="1M4-Db-ptx" secondAttribute="centerX" id="igW-fo-MMB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="p23-zN-ibY" kind="show" identifier="login" id="oeq-DH-Foz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DrE-CG-8Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
