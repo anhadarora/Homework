@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>756C4080-AD76-42FB-8396-528D25F6A5FF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ParsePhotos</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>586291DA112D60CD4120B69542ACC073F2A42336</key>
+		<string>https://github.com/ga-students/MOB-NYC-2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lessons/19/Please Wake Me/ParsePhotos.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>586291DA112D60CD4120B69542ACC073F2A42336</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ga-students/MOB-NYC-2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>586291DA112D60CD4120B69542ACC073F2A42336</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>586291DA112D60CD4120B69542ACC073F2A42336</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MOB-NYC-2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

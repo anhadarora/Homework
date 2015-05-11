@@ -1,0 +1,16 @@
+pod "Parse"
+pod "ParseUI"
+pod "ParseFacebookUtilsV4"
+pod "Facebook-iOS-SDK"
+
+
+
+
+  pod 'AFNetworking', '~> 2.5'
+  pod 'ORStackView', '~> 2.0'
+  pod 'SwiftyJSON', '~> 2.1'
+  pod 'ParseFacebookUtilsV4’
+  pod 'ParseUI'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
