@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="p23-zN-ibY">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Get Started View Controller-->
+        <scene sceneID="mog-iu-fKs">
+            <objects>
+                <viewController id="1Gs-Lo-Rhd" customClass="GetStartedViewController" customModule="frameworkApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J1w-qu-GIq"/>
+                        <viewControllerLayoutGuide type="bottom" id="2uw-Md-GXv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1M4-Db-ptx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm9-bH-cCI">
+                                <rect key="frame" x="260" y="285" width="80" height="30"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getStarted:" destination="1Gs-Lo-Rhd" eventType="touchUpInside" id="cBf-RP-clm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wm9-bH-cCI" firstAttribute="centerY" secondItem="1M4-Db-ptx" secondAttribute="centerY" id="2sw-yT-hac"/>
+                            <constraint firstItem="Wm9-bH-cCI" firstAttribute="centerX" secondItem="1M4-Db-ptx" secondAttribute="centerX" id="igW-fo-MMB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DrE-CG-8Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="-82"/>
+        </scene>
         <!--Center View Controller-->
         <scene sceneID="Z5V-CY-Tkd">
             <objects>
@@ -59,7 +92,7 @@
                                     </connections>
                                 </button>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QWh-oX-RQB">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="alarmCell" selectionStyle="default" indentationWidth="10" id="QWh-oX-RQB">
                                         <rect key="frame" x="0.0" y="0.0" width="539" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QWh-oX-RQB" id="QRZ-Hz-6mv">
@@ -242,7 +275,7 @@
                                 <rect key="frame" x="0.0" y="227" width="600" height="322"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="dayCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayCell" textLabel="tOp-2z-oS2" style="IBUITableViewCellStyleDefault" id="doh-lh-gK9" customClass="DaysTableViewCell" customModule="frameworkApp" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="dayCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayCell" textLabel="tOp-2z-oS2" style="IBUITableViewCellStyleDefault" id="doh-lh-gK9">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="doh-lh-gK9" id="Eh7-XW-jQO">
@@ -257,11 +290,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <outlet property="daysTableViewCell" destination="Eh7-XW-jQO" id="YCF-zM-U8B"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rbB-jm-uva" id="IVS-80-hPv"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.065221773770000005" blue="0.1056158136" alpha="1" colorSpace="calibratedRGB"/>
@@ -297,7 +330,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="FxJ-rS-rpK" id="Fe0-q3-sBb"/>
+                        <outlet property="daysTableView" destination="FxJ-rS-rpK" id="VfO-gi-9f9"/>
                         <outlet property="timePicker" destination="KYb-iB-lcT" id="2Xy-tx-jLp"/>
                     </connections>
                 </viewController>

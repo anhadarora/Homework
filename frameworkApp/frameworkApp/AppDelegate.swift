@@ -38,8 +38,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = containerViewController
         window!.makeKeyAndVisible()
         
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions ?? [NSObject: AnyObject]())
+        
         return true
     }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+
 
     //--------------------------------------
     // MARK: Facebook SDK Integration

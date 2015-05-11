@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class SetAlarmViewController: UIViewController {
+class SetAlarmViewController: UIViewController, UITableViewDataSource {
     
     var students = [PFObject]()
     var days = ["Monday": false,
@@ -19,6 +19,8 @@ class SetAlarmViewController: UIViewController {
                 "Friday": false,
                 "Saturday": false,
                 "Sunday": false]
+    
+    
 
     @IBOutlet weak var timePicker: UIDatePicker!
     
@@ -28,12 +30,13 @@ class SetAlarmViewController: UIViewController {
     }
     
     @IBOutlet weak var daysTableView: UITableView!
-    func tableView(daysTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return days.keys.array.count
     }
     
-    func tableView(daysTableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = daysTableView.dequeueReusableCellWithIdentifier("dayCell") as! DaysTableViewCell
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("dayCell") as! UITableViewCell
         
         let day = days.keys.array[indexPath.row]
         println(day)
@@ -41,6 +44,7 @@ class SetAlarmViewController: UIViewController {
         
         return cell
     }
+    
     //AM is true and PM is false
     func getHourAndMinute() -> (Int, Int, Bool) {
         var amPM = false
